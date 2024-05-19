@@ -1,0 +1,5 @@
+# Project exclude paths
+/bcb-rpc/target/
+/example-common/target/
+/example-consumer/target/
+/example-provider/target/
