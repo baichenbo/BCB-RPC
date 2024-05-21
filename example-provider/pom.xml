@@ -10,7 +10,7 @@
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>bcb-rpc</artifactId>
+            <artifactId>bcb-rpc-pro</artifactId>
             <version>0.0.1</version>
         </dependency>
 
