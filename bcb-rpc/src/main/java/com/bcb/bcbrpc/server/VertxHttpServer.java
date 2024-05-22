@@ -2,9 +2,10 @@ package com.bcb.bcbrpc.server;
 
 import io.vertx.core.Vertx;
 
-public class VertxHttpServer implements HttpServer{
+public class VertxHttpServer implements HttpServer {
     /**
      * 启动服务器
+     *
      * @param port
      */
     public void doStart(int port) {
@@ -18,12 +19,12 @@ public class VertxHttpServer implements HttpServer{
         httpServer.requestHandler(new HttpServerHandler());
 
         //启动HTTP服务器并监听指定端口
-        httpServer.listen(port, result->{
-           if(result.succeeded()){
-               System.out.println("服务器正在监听端口："+port);
-           }else{
-               System.out.println("未能打开服务器："+result.cause());
-           }
+        httpServer.listen(port, result -> {
+            if (result.succeeded()) {
+                System.out.println("The server is listening on the port: " + port);
+            } else {
+                System.out.println("Failed to open the server: " + result.cause());
+            }
         });
 
 

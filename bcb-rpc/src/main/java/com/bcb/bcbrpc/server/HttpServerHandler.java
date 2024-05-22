@@ -27,7 +27,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
         final Serializer serializer = new JdkSerializer();
 
         // 记录日志
-        System.out.println("接受请求：" + request.method() + " " + request.uri());
+        System.out.println("Accept the request: " + request.method() + " " + request.uri());
 
         // 异步处理HTTP请求
         request.bodyHandler(body -> {

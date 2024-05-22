@@ -6,6 +6,7 @@ public interface Serializer {
 
     /**
      * 序列化
+     *
      * @param object
      * @param <T>
      * @return
@@ -15,6 +16,7 @@ public interface Serializer {
 
     /**
      * 反序列化
+     *
      * @param bytes
      * @param type
      * @param <T>
